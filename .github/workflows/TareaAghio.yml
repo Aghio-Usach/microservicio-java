@@ -9,8 +9,7 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest    
 
     steps:
 
@@ -18,11 +17,11 @@ jobs:
 
       - name: build
         run: |
-          echo "building"
+          echo "building final"
           
       - name: SonarCloud Analysis
         run: |
          chmod +x gradlew
-         ./gradlew buil sonar -Dsonar.token=${{ secrets.TOKEN_SONAR }}     
+         ./gradlew buil sonar -Dsonar.token=${{ secrets.TOKEN_SONAR }}    
     
         
