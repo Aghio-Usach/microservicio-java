@@ -15,6 +15,13 @@ jobs:
 
       - uses: actions/checkout@v3
 
-      - name: Run a multi-line script
+      - name: build
         run: |
-          echo "Hola, soy Alexis Ghio"
+          echo "building"
+          
+      - name: SonarCloud Analysis
+        run: |
+         chmod +x gradlew
+         ./gradlew buil sonar -Dsonar.token=${{ secrets.TOKEN_SONAR }}     
+    
+        
