@@ -3,10 +3,6 @@ name: CI
 on: 
 
   push:
-    branches: [ "feature-ms-AlexisGhio-mensaje" ]
-  pull_request:
-    branches: [ "feature-ms-AlexisGhio-mensaje" ]
-
   workflow_dispatch:
 
 jobs:
