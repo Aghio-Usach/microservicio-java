@@ -1,3 +1,2 @@
 rootProject.name = 'microservicio-java'
-include('lib')
 include('plugin')
